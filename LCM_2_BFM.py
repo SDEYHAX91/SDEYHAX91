@@ -1,13 +1,11 @@
-# LCM OF 2 NUMBERS USING BRUTE FORCE METHOD
-print("LCM AI")
 def lcm(x,y):
-    for i in range(1, x * y):
-        for j in range(1, x * y):
-            if x * i == y * j:
-                return x*i
+    m = 1
+    while True:
+        if m % x == 0 and m % y == 0:
+            return m
+        m += 1
     return 1
 
-a = int(input("Enter 1st number: "))
-b = int(input("Enter 2nd number: "))
-
-print(f"LCM of {a} & {b} = {lcm(a,b)}")
+a = int(input("Enter no. 1 = "))
+b = int(input("Enter no. 2 = "))
+print(f"LCM of {a} and {b} = {lcm(a,b)}")
