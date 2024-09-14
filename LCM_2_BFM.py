@@ -1,5 +1,5 @@
 def lcm(x,y):
-    m = 1
+    m = min(x,y)
     while True:
         if m % x == 0 and m % y == 0:
             return m
