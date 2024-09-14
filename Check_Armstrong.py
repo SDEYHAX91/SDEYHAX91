@@ -1,4 +1,5 @@
 def isArmstrong(num):
+    n = num
     ct_digit = i = 0
     digits = []
 
@@ -18,5 +19,3 @@ def isArmstrong(num):
 
 n = int(input("Enter a number: "))
 print(isArmstrong(n))
-
-    
